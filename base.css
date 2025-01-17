@@ -1,0 +1,51 @@
+html {color:#222; text-decoration:none; background-color: rgba(255, 255, 240, 0.3);}
+
+body {margin:0 auto; font-family:"AppleGothicNeoSD", "Malgun Gothic"; font-size:14pt; line-height:1.6;}
+
+nav.global {
+    position:fixed; top:0; height:2em; width:100%;
+    background:rgba(225, 225, 225, 0.95); padding:0.5em 0; border-bottom:0.1em solid rgba(200, 200, 200, 0.8)
+}
+    nav.global a {margin-right:1.5em;}
+    nav.global a:first-child {margin-left:2em;}
+    nav.global span.command {float:right; margin-right:1em}
+    
+
+    article {margin-top:4.5em; padding-left:1.5em;}
+    
+    article#document {width:105%; overflow:scroll;} /*  max-height:30em; */
+        article#document p {max-width:60em;}
+        article#document li {max-width:55em;}
+        article#document p.spacer {text-align:center;}
+        figure {width:60em; margin:1em}
+            img {display:block; max-width:50em; margin:0 auto;}
+            figcaption {text-align:center;}
+
+
+
+article#body {position:relative;}
+
+
+nav.local {position:absolute; right:0; overflow-y:scroll;
+    text-align:center; border-left:1px solid rgba(200, 200, 200, 0.6); padding:0 2em}
+    nav.local a {display:block; height:2.8em; line-height:2.8em}
+    
+
+section#setting {margin:1.8em 0;}
+    span.split {display:inline-block; padding:0 1.5em; border-right:1px solid #ccc; margin-right:-0.22em;}
+    span.split input[type="checkbox"] {vertical-align:middle; display:inline-block; margin-top:0}
+    span.split:last-child {border:none}
+
+table {font:inherit; table-layout:fixed; border-collapse:collapse; margin:2em 1em 2em 0;}
+    caption {text-align:left; font-weight:bold; font-size:120%; height:2em; padding-left:1em}
+    td, th {vertical-align:middle; border:1px solid #111; padding:0.3em;}
+        td.nb {border:none;}
+        td.nopadding {padding:0 !important}
+    th {background-color:rgba(197, 231, 241, 0.8);}
+
+select, input, textarea {font:inherit;}
+tr input[type="number"] {width:3em;}
+
+.al {text-align:left;} .ar {text-align:right;} .ac {text-align:center;}
+
+*[data-hidden="hidden"] {display:none !important;}
